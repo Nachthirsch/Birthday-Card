@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #a2c5fa 0%, #cbd5e2 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  width: 90%;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.content-section {
+  flex: 1;
+  text-align: left;
+  padding-left: 30px;
+  border-left: 1px solid #e0e0e0;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.message-box {
+  border: 1px solid #bdc3c7;
+  padding: 25px;
+  margin-top: 35px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.message-box::before {
+  content: '"';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  font-size: 80px;
+  color: #bdc3c7;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.message-box p {
+  margin: 0;
+  font-weight: 400;
+  color: #2c3e50;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .image-section,
+  .content-section {
+    padding: 0;
+  }
+
+  .content-section {
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
